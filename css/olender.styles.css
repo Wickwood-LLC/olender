@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/css?family=Aladin);
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/base\/_media\.scss}line{font-family:\000031}}
+img, media {
+  max-width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/RailsInstaller\/Ruby1\.9\.3\/lib\/ruby\/gems\/1\.9\.1\/gems\/toolkit-2\.6\.0\/stylesheets\/toolkit\/_clearfix\.scss}line{font-family:\0000313}}
+.l-branding:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000330}}
+.site-name {
+  font-family: Aladin, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+  font-weight: normal;
+  font-size: 2em;
+  font-style: normal;
+  text-align: center;
+  text-shadow: 1.4px 1.4px 5px #4f4f4f;
+  padding: 0;
+  margin: 0;
+  color: #E2341D; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000341}}
+  .site-name a {
+    text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000344}}
+    .site-name a:visited {
+      color: #E2341D; }
+  @media (min-width: 20em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000330}}
+    .site-name {
+      float: none; } }
+  @media (min-width: 64em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000330}}
+    .site-name {
+      float: left;
+      font-size: 5.5em;
+      width: 70%; } }
+  @media (min-width: 70em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000330}}
+    .site-name {
+      float: left;
+      font-size: 4.5em;
+      width: 70%; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000364}}
+.site-slogan {
+  font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+  font-size: 0.65em;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  padding: 1% 2%;
+  margin: 0 auto;
+  color: #022B55; }
+  @media (min-width: 20em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000364}}
+    .site-slogan {
+      float: none; } }
+  @media (min-width: 64em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000364}}
+    .site-slogan {
+      float: none;
+      font-size: 0.8em; } }
+  @media (min-width: 70em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000364}}
+    .site-slogan {
+      float: left;
+      font-size: 1em;
+      width: 66%; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000388}}
+.site-logo {
+  display: block; }
+  @media (min-width: 20em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000388}}
+    .site-logo {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      float: none;
+      justify-content: space-around; } }
+  @media (min-width: 64em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000388}}
+    .site-logo {
+      float: right;
+      margin-bottom: 10px;
+      width: 30%; } }
+  @media (min-width: 70em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000388}}
+    .site-logo {
+      float: right;
+      width: 30%; } }

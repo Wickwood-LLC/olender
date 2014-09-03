@@ -1,0 +1,27 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\000039}}
+.l-page {
+  margin: 0 auto; }
+  @media (min-width: 15em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\000039}}
+    .l-page {
+      max-width: 15em; } }
+  @media (min-width: 20em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\000039}}
+    .l-page {
+      max-width: 20em; } }
+  @media (min-width: 30em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\000039}}
+    .l-page {
+      max-width: 30em; } }
+  @media (min-width: 48em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\000039}}
+    .l-page {
+      max-width: 48em; } }
+  @media (min-width: 64em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\000039}}
+    .l-page {
+      max-width: 64em; } }
+  @media (min-width: 70em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\000039}}
+    .l-page {
+      max-width: 70em; } }

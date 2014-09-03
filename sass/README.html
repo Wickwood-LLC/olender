@@ -1,0 +1,90 @@
+<h1 id="introduction-to-sass-http-sass-lang-com-">Introduction to <a href="http://sass-lang.com/">Sass</a></h1>
+<p>Sass makes CSS fun again. Sass is an extension of CSS3, adding nested rules,
+variables, mixins, selector inheritance, and more. It’s translated to well-
+formatted, standard CSS using the command line tool or a web-framework plugin.</p>
+<p>Sass has two syntaxes. The new main syntax (as of Sass 3) is known as “SCSS”
+(for “Sassy CSS”), and is a superset of CSS3’s syntax. This means that every
+valid CSS3 stylesheet is valid SCSS as well. SCSS files use the extension .scss.</p>
+<p>The second, older syntax is known as the indented syntax (or just “Sass”).
+Inspired by Haml’s terseness, it’s intended for people who prefer conciseness
+over similarity to CSS. Instead of brackets and semicolons, it uses the
+indentation of lines to specify blocks. Although no longer the primary syntax,
+the indented syntax will continue to be supported. Files in the indented syntax
+use the extension .sass.</p>
+<p>Please refer to the <a href="http://sass-lang.com/docs.html">Sass documentation</a> for
+further information about the syntax.</p>
+<h2 id="introduction-to-compass-http-compass-style-org-">Introduction to <a href="http://compass-style.org/">Compass</a></h2>
+<p>Compass is an open-source CSS Authoring Framework.</p>
+<p>Please refer to the <a href="http://compass-style.org/reference">Compass documentation</a>
+for further information on how to leverage the powerful Compass framework.</p>
+<h2 id="compass-extensions">Compass extensions</h2>
+<p>There are many extensions available for Compass. You can install and use as many
+of them together or just a single one depending on your use-case. Good examples
+for useful Compass extensions are &quot;susy&quot; (a responsive grid framework
+[<a href="http://susy.oddbird.net/">http://susy.oddbird.net/</a>]) or &quot;compass-rgbapng&quot; (a rgba() .png file generator)
+but there are many more.</p>
+<h2 id="setting-up-and-using-sass-and-compass">Setting up and using Sass and Compass</h2>
+<p>Compass runs on any computer that has
+<a href="http://www.ruby-lang.org/en/downloads">ruby</a> installed.</p>
+<p>Once you got ruby installed you can easily install the required gems from the
+command line:</p>
+<pre><code>$ gem update --system
+$ gem install compass
+</code></pre><p>Any additional library can be installed in the same way:</p>
+<pre><code>$ gem install compass-rgbapng
+$ gem install susy
+</code></pre><p>Once you have set up your environment you can navigate to the folder that holds
+your config.rb file.</p>
+<p>The config.rb file is the configuration file that helps Sass and Compass to
+understand your environment. For example, it defines which folder your .scss
+or .sass files are stored in or where the generated .css files should be output
+to.</p>
+<p>Executing the following command will constantly watch for any change in your
+.scss files and re-compile them into .css:</p>
+<pre><code>$ compass watch
+</code></pre><p>You can also clear and recompile your .css manually:</p>
+<pre><code>$ compass clean
+$ compass compile
+</code></pre><h2 id="barebones-sass-structure">Barebones Sass Structure</h2>
+<p>The barebones CSS structure provided in this starterkit uses many of the ideas
+discussed in Jonathan <a href="http://smacss.com">Snook&#39;s SMACSS</a> and is intended to
+provide a starting point for building modular, scalable CSS using Sass and
+Drupal.</p>
+<p>Multiple Sass partials are used to help organise the styles, these are combined
+by including them in styles.scss which is compiled into styles.css in the css/
+directory.</p>
+<p>All styles are included in order of specificity, this means that as you go down
+the document each section builds upon and inherits sensibly from the previous
+ones. This results in less undoing of styles, less specificity problems and
+all-round better architected and lighter stylesheets.</p>
+<p>The file and directory structure contained in this folder looks something like
+this:</p>
+<h3 id="top-level-files">Top level files</h3>
+<p>These files are the main entry points for the Sass compiler and shouldn&#39;t
+directly contain any CSS code, instead they only serves to combine the Sass
+contained in the partials (see below) through @import directives.</p>
+<h4 id="olender-styles-scss">olender.styles.scss</h4>
+<p>This file aggregates all the components into a single file.</p>
+<h4 id="olender-normalize-scss">olender.normalize.scss</h4>
+<p>This file provides a CSS reset/normalize generated based on the legacy
+variables.</p>
+<h4 id="olender-hacks-scss">olender.hacks.scss</h4>
+<p>This file may be used to provide temporary hot-fixes for style issues that
+you plan to properly implement as components at a later point in time or simply
+don&#39;t have a proper solution for yet.</p>
+<h4 id="olender-no-query-scss">olender.no-query.scss</h4>
+<p>This file re-renders the same contents as the styles.scss file but without any
+media queries. It can be used as a fallback for for older browsers that don&#39;t
+support media queries. You can find more information about this on the
+github repository of the
+<a href="https://github.com/Team-Sass/breakpoint/wiki/No-Query-Fallbacks">breakpoint</a>.
+Compass gem.</p>
+<h3 id="partials">Partials</h3>
+<h4 id="variables">variables</h4>
+<p>This is where you place your Sass variables.</p>
+<h4 id="abstractions">abstractions</h4>
+<p>This is where you place your functions, mixins and extends.</p>
+<h4 id="base">base</h4>
+<p>This is where you place all your basic, raw HTML element styling.</p>
+<h4 id="components">components</h4>
+<p>This is where you place your components.</p>

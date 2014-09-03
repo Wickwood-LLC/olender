@@ -1,0 +1,105 @@
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit";
+
+// Import variables, abstractions, base styles and components using globbing.
+//
+// Globbing will always import files alphabetically. Optimally, all your
+// components should be self-contained and explicit enough to not have any
+// contained styles leak into unrelated components: The import order should not
+// affect the result.
+//
+// If there are variables, functions or mixins that depend on each other and
+// therefore need to be imported in a specific order you can import them
+// directly. Variables-, function- or mixin providing partials should never
+// output any styles themselves: Importing them multiple times to resolve
+// dependencies shouldn't be a problem.
+@import "variables/**/*";
+@import "abstractions/**/*";
+@import "base/**/*";
+@import "components/**/*";
+
+@import url(http://fonts.googleapis.com/css?family=Aladin);
+
+.l-branding {
+	@include clearfix;
+}
+
+.site-name {
+	font-family: Aladin, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+	font-weight: normal;
+	font-size: 2em;
+	font-style: normal;
+	text-align: center;
+	text-shadow: 1.4px 1.4px 5px rgb(79, 79, 79);
+	padding: 0;
+	margin: 0;
+	color: #E2341D;
+
+	a {
+		text-decoration: none;
+
+		&:visited {
+			color: #E2341D;
+		}
+	}
+
+	@include breakpoint($phone){
+		float: none;
+	}
+	@include breakpoint($tab-landscape){
+		float: left;
+		font-size: 5.5em;
+		width: 70%;
+	}
+	@include breakpoint($desk){
+		float: left;
+		font-size: 4.5em;
+		width: 70%;
+	}
+}
+
+.site-slogan {
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	font-size: 0.65em;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	padding: 1% 2%;
+	margin: 0 auto;
+	color: #022B55;
+
+	@include breakpoint($phone){
+		float: none;
+	}
+	@include breakpoint($tab-landscape){
+		float: none;
+		font-size: 0.8em;
+	}
+	@include breakpoint($desk){
+		float: left;
+		font-size: 1em;
+		width: 66%;
+	}
+}
+
+.site-logo {
+	display: block;
+
+	@include breakpoint($phone){
+		@include flexbox;
+		float: none;
+		justify-content: space-around;
+	}
+	@include breakpoint($tab-landscape){
+		float: right;
+		margin-bottom: 10px;
+		width: 30%;		
+	}
+	@include breakpoint($desk){
+		float: right;
+		width: 30%;
+	}
+}
