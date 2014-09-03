@@ -90,3 +90,5 @@
   $url: $url + wf-serialize($fonts);
   @import url($url);
 }
+
+$default-font: Verdana, Geneva, Arial, Helvetica, Sans-Serif;

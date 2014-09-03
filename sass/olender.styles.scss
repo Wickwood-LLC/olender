@@ -21,7 +21,24 @@
 @import "base/**/*";
 @import "components/**/*";
 
+html {
+	font-family: $default-font;
+}
+
 @import url(http://fonts.googleapis.com/css?family=Aladin);
+
+a, a:visited {
+	color: #3F9ACA;
+	text-decoration: none;
+
+	&:hover {
+		color: #E2341D;
+	}
+
+	&.active {
+		color: #0566C7;
+	}
+}
 
 .l-branding {
 	@include clearfix;
@@ -46,60 +63,94 @@
 		}
 	}
 
-	@include breakpoint($phone){
-		float: none;
-	}
-	@include breakpoint($tab-landscape){
-		float: left;
-		font-size: 5.5em;
-		width: 70%;
-	}
-	@include breakpoint($desk){
-		float: left;
-		font-size: 4.5em;
-		width: 70%;
-	}
+	@include breakpoint($sm-phone, true){
+        
+    }
+    @include breakpoint($phone, true){
+        
+    }
+    @include breakpoint($tab-mini, true){
+        font-size:3em;
+    }
+    @include breakpoint($tab-portrait, true){
+        @include grid-span(8,1);
+        font-size:3.2em;
+        margin: 0;
+    }
+    @include breakpoint($tab-landscape, true){
+        @include grid-span(8,1);
+        font-size: 4.2em;
+        margin: 0;
+    }
+    @include breakpoint($desk, true){
+        @include grid-span(9,1);
+        font-size: 5em;
+        margin:0;
+    }
 }
 
 .site-slogan {
+	float: none;
 	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
 	font-size: 0.65em;
 	font-weight: normal;
 	text-decoration: none;
-	text-align: center;
+	text-align: left;
 	padding: 1% 2%;
 	margin: 0 auto;
 	color: #022B55;
 
-	@include breakpoint($phone){
-		float: none;
-	}
-	@include breakpoint($tab-landscape){
-		float: none;
-		font-size: 0.8em;
-	}
-	@include breakpoint($desk){
-		float: left;
-		font-size: 1em;
-		width: 66%;
-	}
+	@include breakpoint($sm-phone, true){
+		@include grid-span(6,7);
+    }
+    @include breakpoint($phone, true){
+        margin-top: 4%;
+        text-align: right;
+    }
+    @include breakpoint($tab-mini, true){
+        @include grid-span(9,4);
+        font-size: 1em;
+        margin-top: 0;
+    }
+    @include breakpoint($tab-portrait, true){
+        @include grid-span(8,1);
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    @include breakpoint($tab-landscape, true){
+        @include grid-span(8,1);
+        margin: 0;
+        padding: 0;
+    }
+    @include breakpoint($desk, true){
+    	@include grid-span(9,1);
+		margin: 0;
+    }
 }
 
 .site-logo {
 	display: block;
 
-	@include breakpoint($phone){
-		@include flexbox;
-		float: none;
-		justify-content: space-around;
-	}
-	@include breakpoint($tab-landscape){
-		float: right;
-		margin-bottom: 10px;
-		width: 30%;		
-	}
-	@include breakpoint($desk){
-		float: right;
-		width: 30%;
-	}
+	@include breakpoint($sm-phone, true){
+        @include grid-span(6,1);
+    }
+    @include breakpoint($phone, true){
+        
+    }
+    @include breakpoint($tab-mini, true){
+        @include grid-span(3,1);
+    }
+    @include breakpoint($tab-portrait, true){
+        @include grid-span(4,9);
+        font-size: 3.5em;
+    }
+    @include breakpoint($tab-landscape, true){
+        @include grid-span(4,9);
+        font-size: 3.5em;
+    }
+    @include breakpoint($desk, true){
+        @include grid-span(3,10);
+        margin: 0;
+    }
 }

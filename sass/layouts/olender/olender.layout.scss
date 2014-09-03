@@ -28,3 +28,15 @@
         max-width: $desk;
     }
 }
+
+.l-main {
+    @include clearfix;
+}
+
+.l-content {
+    @include grid-span(9,1);
+}
+
+.l-region--sidebar-first {
+    @include grid-span(3,10);
+}
