@@ -31,7 +31,7 @@
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
-        <h1><?php print $title; ?></h1>
+        <h2 class="article-title"><?php print $title; ?></h2>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
       <?php print $messages; ?>

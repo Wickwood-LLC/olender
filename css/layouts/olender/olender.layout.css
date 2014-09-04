@@ -26,24 +26,24 @@
     .l-page {
       max-width: 70em; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/RailsInstaller\/Ruby1\.9\.3\/lib\/ruby\/gems\/1\.9\.1\/gems\/toolkit-2\.6\.0\/stylesheets\/toolkit\/_clearfix\.scss}line{font-family:\0000313}}
-.l-main:after {
-  content: "";
-  display: table;
-  clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\0000332}}
+.l-main {
+  display: flex;
+  flex-flow: row wrap; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\0000337}}
 .l-content {
-  width: 74.57627%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none; }
+  flex: 1 100%;
+  padding: 0 2%; }
+  @media (min-width: 48em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\0000337}}
+    .l-content {
+      flex: 9 0px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\0000346}}
 .l-region--sidebar-first {
-  width: 23.72881%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none; }
+  flex: 1 100%; }
+  @media (min-width: 48em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\0000346}}
+    .l-region--sidebar-first {
+      flex: 3 0px; } }

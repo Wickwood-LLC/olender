@@ -92,7 +92,7 @@
   <?php if ($display_submitted): ?>
     <footer class="node__submitted">
       <?php print $user_picture; ?>
-      <p class="submitted"><?php print $submitted; ?></p>
+      <span class="post-date"><?php print $post_date; ?></span> | <span class="post-author"><?php print $post_author; ?></span>
     </footer>
   <?php endif; ?>
 

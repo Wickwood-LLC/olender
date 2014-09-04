@@ -10,6 +10,7 @@
 
 function olender_preprocess_node(&$variables) {
   if ($variables['submitted']) {
-    $variables['submitted'] = t('!datetime | !username', array('!username' => $variables['name'], '!datetime' => format_date($variables['node']->created, 'custom', 'F j, Y - g:ia')));
+  	$variables['post_date'] = t('!datetime', array('!datetime' => format_date($variables['node']->created, 'custom', 'F j, Y - g:ia')));
+    $variables['post_author'] = t('!username', array('!username' => $variables['name']));
   }
 }
