@@ -40,14 +40,32 @@ a, a:visited {
 	}
 }
 
+li.expanded, li.leaf, li.collapsed,
+ul li, ul li.expanded, ul li.leaf, ul li.collapsed, .item-list ul li, 
+.menu ul li, .menu ul li.expanded, .menu ul li.leaf, .menu ul li.collapsed,
+.menu .collapsed, .menu .expanded, .menu .leaf {
+	text-align: left;
+	list-style: none;
+}
+
 .l-branding {
-	@include clearfix;
+	flex-flow: row wrap;
+
+	@include flexbox();
+
+	@include breakpoint($tab-mini){
+		flex-flow: column wrap;
+		height: 135px;
+	}
+	@include breakpoint($tab-portrait){
+		max-height: 120px;	
+	}
 }
 
 .site-name {
 	font-family: Aladin, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
 	font-weight: normal;
-	font-size: 2em;
+	font-size: 3em;
 	font-style: normal;
 	text-align: center;
 	text-shadow: 1.4px 1.4px 5px rgb(79, 79, 79);
@@ -59,29 +77,26 @@ a, a:visited {
 		color: #E2341D;
 	}
 
+	@include flex(1 auto);
 	@include breakpoint($sm-phone, true){
-        
+        width: 100%; 
     }
     @include breakpoint($phone, true){
-        
+           
     }
     @include breakpoint($tab-mini, true){
-        font-size:3em;
+        font-size: 2.628em;
+        width: 50%;
     }
     @include breakpoint($tab-portrait, true){
-        @include grid-span(8,1);
         font-size:3.2em;
-        margin: 0;
+        width: 70%;
     }
     @include breakpoint($tab-landscape, true){
-        @include grid-span(8,1);
         font-size: 4.2em;
-        margin: 0;
     }
     @include breakpoint($desk, true){
-        @include grid-span(9,1);
         font-size: 5em;
-        margin:0;
     }
 }
 
@@ -91,68 +106,69 @@ a, a:visited {
 	font-size: 0.65em;
 	font-weight: normal;
 	text-decoration: none;
-	text-align: left;
-	padding: 1% 2%;
+	text-align: center;
 	margin: 0 auto;
 	color: #022B55;
 
+	@include flex(1 auto);
 	@include breakpoint($sm-phone, true){
-		@include grid-span(6,7);
-    }
-    @include breakpoint($phone, true){
-        margin-top: 4%;
-        text-align: right;
-    }
-    @include breakpoint($tab-mini, true){
-        @include grid-span(9,4);
-        font-size: 1em;
-        margin-top: 0;
-    }
-    @include breakpoint($tab-portrait, true){
-        @include grid-span(8,1);
-        margin: 0;
-        padding: 0;
+		margin-top: 0;
         text-align: center;
-    }
-    @include breakpoint($tab-landscape, true){
-        @include grid-span(8,1);
-        margin: 0;
-        padding: 0;
-    }
-    @include breakpoint($desk, true){
-    	@include grid-span(9,1);
-		margin: 0;
-    }
-}
-
-.site-logo {
-	display: block;
-
-	@include breakpoint($sm-phone, true){
-        @include grid-span(6,1);
+        width: 70%;
     }
     @include breakpoint($phone, true){
         
     }
     @include breakpoint($tab-mini, true){
-        @include grid-span(3,1);
+        font-size: 0.8em;
+        padding: 0 2%;
+        width: 46%;
     }
     @include breakpoint($tab-portrait, true){
-        @include grid-span(4,9);
-        font-size: 3.5em;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 70%;
     }
     @include breakpoint($tab-landscape, true){
-        @include grid-span(4,9);
-        font-size: 3.5em;
+        margin: 0;
+        padding: 0;
     }
     @include breakpoint($desk, true){
-        @include grid-span(3,10);
-        margin: 0;
+
+    }
+}
+
+.site-logo {
+	display: block;
+	align-self: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0;
+    width: auto;
+    max-width: 100%;
+
+	@include flex(2 auto);
+
+    img {
+    	@include flex(0 auto);
+    	width: 100%;
+    }
+
+	@include flex(1 auto);
+
+	@include breakpoint($sm-phone, true){
+
+    }
+    @include breakpoint($tab-mini, true){
+        
+    }
+    @include breakpoint($tab-portrait, true){
+        max-width: 30%;
     }
 }
 
 .l-region--sidebar-first{
-
 	.contextual-links-region {
 	background: #E7F2F9;
 	border: 1px solid #82BEDE;
@@ -269,4 +285,21 @@ a, a:visited {
 
 tr.even, tr.odd {
 	background-color: transparent;
+}
+
+.l-footer {
+	border-top: 1px dotted #82BEDE;
+	padding: 0;
+	margin: 20px auto 0;
+	position: relative;
+	color: #000000;
+	font-size: 12px;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	line-height: 175%;
+	text-align: center;
+
+	p {
+		margin: 0;
+		padding: 0;
+	}
 }

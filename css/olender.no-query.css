@@ -18,139 +18,118 @@ a, a:visited {
   a.active, a:visited.active {
     color: #0566C7; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/RailsInstaller\/Ruby1\.9\.3\/lib\/ruby\/gems\/1\.9\.1\/gems\/toolkit-2\.6\.0\/stylesheets\/toolkit\/_clearfix\.scss}line{font-family:\0000313}}
-.l-branding:after {
-  content: "";
-  display: table;
-  clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000343}}
+li.expanded, li.leaf, li.collapsed,
+ul li, ul li.expanded, ul li.leaf, ul li.collapsed, .item-list ul li,
+.menu ul li, .menu ul li.expanded, .menu ul li.leaf, .menu ul li.collapsed,
+.menu .collapsed, .menu .expanded, .menu .leaf {
+  text-align: left;
+  list-style: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000351}}
+.l-branding {
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000365}}
 .site-name {
   font-family: Aladin, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
   font-weight: normal;
-  font-size: 2em;
+  font-size: 3em;
   font-style: normal;
   text-align: center;
   text-shadow: 1.4px 1.4px 5px #4f4f4f;
   padding: 0;
   margin: 0;
-  font-size: 3em;
-  width: 66.10169%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none;
+  -webkit-box-flex: 1 auto;
+  -moz-box-flex: 1 auto;
+  -webkit-flex: 1 auto;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
+  width: 100%;
+  font-size: 2.628em;
+  width: 50%;
   font-size: 3.2em;
-  margin: 0;
-  width: 66.10169%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none;
+  width: 70%;
   font-size: 4.2em;
-  margin: 0;
-  width: 74.57627%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none;
-  font-size: 5em;
-  margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000357}}
+  font-size: 5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000375}}
   .site-name a {
     text-decoration: none;
     color: #E2341D; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003103}}
 .site-slogan {
   float: none;
   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
   font-size: 0.65em;
   font-weight: normal;
   text-decoration: none;
-  text-align: left;
-  padding: 1% 2%;
+  text-align: center;
   margin: 0 auto;
   color: #022B55;
-  width: 49.15254%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-  margin-top: 4%;
-  text-align: right;
-  width: 74.57627%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-  font-size: 1em;
+  -webkit-box-flex: 1 auto;
+  -moz-box-flex: 1 auto;
+  -webkit-flex: 1 auto;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
   margin-top: 0;
-  width: 66.10169%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none;
+  text-align: center;
+  width: 70%;
+  font-size: 0.8em;
+  padding: 0 2%;
+  width: 46%;
   margin: 0;
   padding: 0;
   text-align: center;
-  width: 66.10169%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none;
+  width: 70%;
   margin: 0;
-  padding: 0;
-  width: 74.57627%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none;
-  margin: 0; }
+  padding: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003142}}
 .site-logo {
   display: block;
-  width: 49.15254%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none;
-  width: 23.72881%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none;
-  width: 32.20339%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-  font-size: 3.5em;
-  width: 32.20339%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-  font-size: 3.5em;
-  width: 23.72881%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-  margin: 0; }
+  align-self: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 0;
+  width: auto;
+  max-width: 100%;
+  -webkit-box-flex: 2 auto;
+  -moz-box-flex: 2 auto;
+  -webkit-flex: 2 auto;
+  -ms-flex: 2 auto;
+  flex: 2 auto;
+  -webkit-box-flex: 1 auto;
+  -moz-box-flex: 1 auto;
+  -webkit-flex: 1 auto;
+  -ms-flex: 1 auto;
+  flex: 1 auto;
+  max-width: 30%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003153}}
+  .site-logo img {
+    -webkit-box-flex: 0 auto;
+    -moz-box-flex: 0 auto;
+    -webkit-flex: 0 auto;
+    -ms-flex: 0 auto;
+    flex: 0 auto;
+    width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003156}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003172}}
 .l-region--sidebar-first .contextual-links-region {
   background: #E7F2F9;
   border: 1px solid #82BEDE;
   padding: 7px;
   margin: 3px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003162}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003178}}
   .l-region--sidebar-first .contextual-links-region table {
     width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003172}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003188}}
 .block__title, .article-title {
   color: #000000;
   font-size: 24px;
@@ -160,16 +139,16 @@ a, a:visited {
   padding: 6px 5px;
   margin: 0 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003198}}
 .article-title {
   color: #03407C;
   font-size: 29px;
   margin: 5px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003205}}
 .tabs--primary {
   border: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003192}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003208}}
   .tabs--primary li a {
     text-decoration: none;
     font-size: 16px;
@@ -204,19 +183,19 @@ a, a:visited {
     padding: 0 21px;
     margin: 0 auto;
     height: 28px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003228}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003244}}
     .tabs--primary li a:hover {
       color: #C7E2F0;
       background-color: #328DBD; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003233}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003249}}
     .tabs--primary li a.active {
       color: #C2FFFF;
       background-color: #25698D; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003240}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003256}}
 .node__submitted {
   color: #0454A4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003243}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003259}}
   .node__submitted .post-date::before {
     content: url("../images/postdateicon.png");
     margin-right: 6px;
@@ -226,7 +205,7 @@ a, a:visited {
     font-size: 0;
     line-height: 0;
     bottom: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003254}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003270}}
   .node__submitted .post-author::before {
     content: url("../images/postauthoricon.png");
     margin-right: 6px;
@@ -237,10 +216,26 @@ a, a:visited {
     line-height: 0;
     bottom: auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003266}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003282}}
 .node__content .field--name-body {
   line-height: 175%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003270}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003286}}
 tr.even, tr.odd {
   background-color: transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003290}}
+.l-footer {
+  border-top: 1px dotted #82BEDE;
+  padding: 0;
+  margin: 20px auto 0;
+  position: relative;
+  color: #000000;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+  line-height: 175%;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003301}}
+  .l-footer p {
+    margin: 0;
+    padding: 0; }
