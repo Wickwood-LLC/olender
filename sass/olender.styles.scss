@@ -23,6 +23,10 @@
 
 html {
 	font-family: $default-font;
+	font-size: $default-font-size * 0.75;
+	@include breakpoint($tab-mini){
+		font-size: $default-font-size;
+	}
 }
 
 @import url(http://fonts.googleapis.com/css?family=Aladin);
@@ -48,6 +52,14 @@ ul li, ul li.expanded, ul li.leaf, ul li.collapsed, .item-list ul li,
 	list-style: none;
 }
 
+p {
+	font-size: $default-font-size * 0.75;
+}
+
+.l-header {
+	margin-bottom: 1%;
+}
+
 .l-branding {
 	flex-flow: row wrap;
 
@@ -65,7 +77,7 @@ ul li, ul li.expanded, ul li.leaf, ul li.collapsed, .item-list ul li,
 .site-name {
 	font-family: Aladin, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
 	font-weight: normal;
-	font-size: 3em;
+	/*font-size: 2em;*/
 	font-style: normal;
 	text-align: center;
 	text-shadow: 1.4px 1.4px 5px rgb(79, 79, 79);
@@ -103,7 +115,7 @@ ul li, ul li.expanded, ul li.leaf, ul li.collapsed, .item-list ul li,
 .site-slogan {
 	float: none;
 	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
-	font-size: 0.65em;
+	font-size: $default-font-size * 0.75;
 	font-weight: normal;
 	text-decoration: none;
 	text-align: center;
@@ -120,11 +132,11 @@ ul li, ul li.expanded, ul li.leaf, ul li.collapsed, .item-list ul li,
         
     }
     @include breakpoint($tab-mini, true){
-        font-size: 0.8em;
         padding: 0 2%;
         width: 46%;
     }
     @include breakpoint($tab-portrait, true){
+    	font-size: $default-font-size;
         margin: 0;
         padding: 0;
         text-align: center;
@@ -168,6 +180,38 @@ ul li, ul li.expanded, ul li.leaf, ul li.collapsed, .item-list ul li,
     }
 }
 
+.l-region--navigation {
+	border-bottom: 1px dotted #82BEDE;
+}
+
+#block-system-main-menu .menu {
+	display: none;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	padding: 0;
+
+	@include breakpoint($tab-portrait){
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	li {
+		flex: 1 100%;
+		font-size: 1.250em;
+		font-weight: bold;
+		font-style: normal;
+		margin-left: 6%;
+		text-decoration: none;
+		text-transform: uppercase;
+		text-align: left;
+
+		@include breakpoint($tab-portrait){
+			flex: 0 1 25%;
+			text-align: center;
+		}
+	}
+}
+
 .l-region--sidebar-first{
 	.contextual-links-region {
 	background: #E7F2F9;
@@ -187,7 +231,7 @@ ul li, ul li.expanded, ul li.leaf, ul li.collapsed, .item-list ul li,
 
 .block__title {
 	color: #000000;
-	font-size: 24px;
+	font-size: 1.5em;
 	font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
 	font-weight: normal;
 	font-style: normal;
@@ -198,48 +242,117 @@ ul li, ul li.expanded, ul li.leaf, ul li.collapsed, .item-list ul li,
 .article-title {
 	@extend .block__title;
 	color: #03407C;
-	font-size: 29px;
+	font-size: 1.813em;
 	margin: 5px 10px;
+}
+
+#menu-button {
+	background: #0454A4;
+	cursor: pointer;
+	display: block;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	display: block;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: 700;
+	color: #d3eced;
+	padding: 1% 5%;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	width: auto;
+
+	&::before {
+		display: block;
+		content: '';
+		position: relative;
+		height: 3px;
+		width: 22px;
+		border-top: 2px solid #d3eced;
+		left: 90%;
+		top: 8px;
+
+		@include breakpoint($tab-mini){
+			left: 96%;
+		}
+	}
+
+	&::after {
+		@extend #menu-button::before;
+		border-bottom: 2px solid #d3eced;
+		top: -10px;
+	}
+
+	@include breakpoint($tab-portrait){
+		display: none;
+	}
+}
+
+.l-content > #menu-button {
+	@extend #menu-button;
+	font-size: 0.75em;
+	width: 80%;
 }
 
 .tabs--primary {
 	border: 0;
+	display: none;
+
+	@include breakpoint($tab-portrait){
+		@include flexbox();
+	}
+
+	li {
+		margin-right: 0;
+		width: 90%;
+
+		@include breakpoint($tab-portrait){
+			flex: 0 auto;
+			margin: 0 1% 1% 0;
+			width: auto;
+		}
+	}
 
 	li a {
-		text-decoration: none;
-		font-size: 16px;
-		font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
-		font-weight: bold;
-		font-style: normal;
-		text-shadow: 0 -1px 0 rgba(23, 23, 23, 0.82);
-		position: relative;
-		display: inline-block;
-		vertical-align: middle;
-		white-space: nowrap;
-		text-align: center;
-		color: #FFFFFF;
-		margin: 0 !important;
-		overflow: visible;
-		cursor: pointer;
-		text-indent: 0;
-		line-height: 28px;
-		-webkit-box-sizing: content-box;
-		-moz-box-sizing: content-box;
-		box-sizing: content-box;
-		background: #3D9CFA;
+		width: auto;
 
-		border: 0;
-		border-collapse: separate;
-		-webkit-background-origin: border !important;
-		-moz-background-origin: border !important;
-		background-origin: border-box !important;
-		background: #3D9CFA;
-		-webkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-		border-radius: 4px;
-		padding: 0 21px;
-		margin: 0 auto;
-		height: 28px;
+		@include breakpoint($tab-portrait){
+			text-decoration: none;
+			font-size: 1em;
+			font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+			font-weight: bold;
+			font-style: normal;
+			text-shadow: 0 -1px 0 rgba(23, 23, 23, 0.82);
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			white-space: nowrap;
+			text-align: center;
+			color: #FFFFFF;
+			margin: 0 !important;
+			overflow: visible;
+			cursor: pointer;
+			text-indent: 0;
+			line-height: 28px;
+			-webkit-box-sizing: content-box;
+			-moz-box-sizing: content-box;
+			box-sizing: content-box;
+			background: #3D9CFA;
+
+			border: 0;
+			border-collapse: separate;
+			-webkit-background-origin: border !important;
+			-moz-background-origin: border !important;
+			background-origin: border-box !important;
+			background: #3D9CFA;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+			padding: 0 21px;
+			margin: 0 auto;
+			height: 28px;
+			width: auto;
+		}
 
 		&:hover {
 			color: #C7E2F0;
@@ -255,6 +368,7 @@ ul li, ul li.expanded, ul li.leaf, ul li.collapsed, .item-list ul li,
 
 .node__submitted {
 	color: #0454A4;
+	margin-top: 1%;
 
 	.post-date::before {
 		content: url('../images/postdateicon.png');
@@ -293,7 +407,7 @@ tr.even, tr.odd {
 	margin: 20px auto 0;
 	position: relative;
 	color: #000000;
-	font-size: 12px;
+	font-size: 0.75em;
 	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
 	line-height: 175%;
 	text-align: center;
