@@ -1,0 +1,112 @@
+.l-header {
+	margin-bottom: 1%;
+}
+
+.l-branding {
+	flex-flow: row wrap;
+
+	@include flexbox();
+
+	@include breakpoint($tab-mini){
+		flex-flow: column wrap;
+		height: 135px;
+	}
+	@include breakpoint($tab-portrait){
+		max-height: 120px;	
+	}
+}
+
+.site-name {
+	font-family: $site-name-font;
+  	@include site-name-styles;
+
+	@include flex(1 auto);
+	@include breakpoint($sm-phone, true){
+        width: 100%; 
+    }
+    @include breakpoint($phone, true){
+    	font-size: 3em;
+    }
+    @include breakpoint($tab-mini, true){
+        font-size: 2.628em;
+        width: 50%;
+    }
+    @include breakpoint($tab-portrait, true){
+        font-size:3.2em;
+        width: 70%;
+    }
+    @include breakpoint($tab-landscape, true){
+        font-size: 4.2em;
+    }
+    @include breakpoint($desk, true){
+        font-size: 5em;
+    }
+}
+
+.site-slogan {
+	float: none;
+	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+	font-size: $default-font-size * 0.75;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	margin: 0 auto;
+	color: $site-slogan-color;
+
+	@include flex(1 auto);
+	@include breakpoint($sm-phone, true){
+		margin-top: 0;
+        text-align: center;
+        width: 70%;
+    }
+    @include breakpoint($phone, true){
+        
+    }
+    @include breakpoint($tab-mini, true){
+        padding: 0 2%;
+        width: 46%;
+    }
+    @include breakpoint($tab-portrait, true){
+    	font-size: $default-font-size;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 70%;
+    }
+    @include breakpoint($tab-landscape, true){
+        margin: 0;
+        padding: 0;
+    }
+    @include breakpoint($desk, true){
+
+    }
+}
+
+.site-logo {
+	display: block;
+	align-self: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0;
+    width: auto;
+    max-width: 100%;
+
+	@include flex(2 auto);
+
+    img {
+    	@include flex(0 auto);
+    	width: 100%;
+    }
+
+	@include flex(1 auto);
+
+	@include breakpoint($sm-phone, true){
+
+    }
+    @include breakpoint($tab-mini, true){
+        
+    }
+    @include breakpoint($tab-portrait, true){
+        max-width: 30%;
+    }
+}

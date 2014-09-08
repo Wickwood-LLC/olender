@@ -1,4 +1,4 @@
-/***** Include webfonts *****/
+/********** Include webfonts **********/
 @function wf-str-replace($string, $find, $replace, $all: true) {
   $index: str-index($string, $find);
   @if $index {
@@ -91,7 +91,8 @@
   @import url($url);
 }
 
-/***** Site name styles *****/
+
+/********** Site name styles **********/
 @mixin site-name-styles{
   font-weight: normal;
   font-style: normal;
@@ -106,7 +107,8 @@
   }
 }
 
-/***** Flexbox Mixins *****/
+
+/********** Flexbox Mixins **********/
 @mixin flexbox() {
   display: -webkit-box;
   display: -moz-box;

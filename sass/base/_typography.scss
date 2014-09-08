@@ -1,11 +1,26 @@
+// Import the webfont from Google
 @import url(http://fonts.googleapis.com/css?family=Aladin);
 
-//Set base fonts
+// Set base fonts
 html {
   font-family: $default-font;
   font-size: $default-font-size * 0.75;
   @include breakpoint($tab-mini){
     font-size: $default-font-size;
+  }
+}
+
+// Link colors
+a, a:visited {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+
+  &.active {
+    color: $link-active-color;
   }
 }
 

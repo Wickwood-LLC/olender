@@ -1,6 +1,6 @@
-/***** Include webfonts *****/
-/***** Site name styles *****/
-/***** Flexbox Mixins *****/
+/********** Include webfonts **********/
+/********** Site name styles **********/
+/********** Flexbox Mixins **********/
 @import url(http://fonts.googleapis.com/css?family=Aladin);
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_lists\.scss}line{font-family:\000031}}
 li.expanded, li.leaf, li.collapsed,
@@ -14,12 +14,27 @@ ul li, ul li.expanded, ul li.leaf, ul li.collapsed, .item-list ul li,
 img, media {
   max-width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_typography\.scss}line{font-family:\000034}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_tables\.scss}line{font-family:\000031}}
+tr.even, tr.odd {
+  background-color: transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_typography\.scss}line{font-family:\000035}}
 html {
   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
   font-size: 12px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_typography\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_typography\.scss}line{font-family:\0000314}}
+a, a:visited {
+  color: #3F9ACA;
+  text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_typography\.scss}line{font-family:\0000318}}
+  a:hover, a:visited:hover {
+    color: #3F9ACA; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_typography\.scss}line{font-family:\0000322}}
+  a.active, a:visited.active {
+    color: #3F9ACA; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_typography\.scss}line{font-family:\0000328}}
 .l-footer {
   font-size: 12px; }
 
@@ -110,7 +125,7 @@ html {
       color: #C2FFFF;
       background-color: #25698D; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_layout\.scss}line{font-family:\000033}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_grid\.scss}line{font-family:\000031}}
 .l-page {
   margin: 0 auto;
   max-width: 15em;
@@ -120,38 +135,27 @@ html {
   max-width: 64em;
   max-width: 70em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_layout\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_grid\.scss}line{font-family:\0000324}}
 .l-main {
   display: flex;
   flex-flow: row wrap; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_layout\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_grid\.scss}line{font-family:\0000329}}
 .l-content {
   flex: 1 100%;
   padding: 0 2%;
   flex: 9 0px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_layout\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_grid\.scss}line{font-family:\0000338}}
 .l-region--sidebar-first {
   flex: 1 100%;
   flex: 3 0px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000324}}
-a, a:visited {
-  color: #3F9ACA;
-  text-decoration: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000328}}
-  a:hover, a:visited:hover {
-    color: #3F9ACA; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000332}}
-  a.active, a:visited.active {
-    color: #3F9ACA; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\000031}}
 .l-header {
   margin-bottom: 1%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\000035}}
 .l-branding {
   flex-flow: row wrap;
   display: -webkit-box;
@@ -160,7 +164,7 @@ a, a:visited {
   display: -webkit-flex;
   display: flex; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000319}}
 .site-name {
   font-family: Aladin, Arial, "Arial Unicode MS", Helvetica, Sans-Serif;
   font-weight: normal;
@@ -182,12 +186,12 @@ a, a:visited {
   width: 70%;
   font-size: 4.2em;
   font-size: 5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/abstractions\/_mixins\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/abstractions\/_mixins\.scss}line{font-family:\00003104}}
   .site-name a {
     text-decoration: none;
     color: #E2341D; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000346}}
 .site-slogan {
   float: none;
   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
@@ -215,7 +219,7 @@ a, a:visited {
   margin: 0;
   padding: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000385}}
 .site-logo {
   display: block;
   align-self: center;
@@ -235,7 +239,7 @@ a, a:visited {
   -ms-flex: 1 auto;
   flex: 1 auto;
   max-width: 30%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000396}}
   .site-logo img {
     -webkit-box-flex: 0 auto;
     -moz-box-flex: 0 auto;
@@ -244,37 +248,37 @@ a, a:visited {
     flex: 0 auto;
     width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000325}}
 .l-region--sidebar-first .contextual-links-region {
   background: #E7F2F9;
   border: 1px solid #82BEDE;
   padding: 7px;
   margin: 3px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003157}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000331}}
   .l-region--sidebar-first .contextual-links-region table {
     width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003167}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000341}}
 .block__title, .article-title {
   color: #000000;
   font-size: 1.5em;
-  font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
+  font-family: "Trebuchet MS", Arial, Helvetica, Sans-Serif;
   font-weight: normal;
   font-style: normal;
   padding: 6px 5px;
   margin: 0 5px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000351}}
 .article-title {
   color: #03407C;
   font-size: 1.813em;
   margin: 5px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003184}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000358}}
 .node__submitted {
   color: #0454A4;
   margin-top: 1%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003188}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000362}}
   .node__submitted .post-date::before {
     content: url("../images/postdateicon.png");
     margin-right: 6px;
@@ -284,7 +288,7 @@ a, a:visited {
     font-size: 0;
     line-height: 0;
     bottom: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003199}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000373}}
   .node__submitted .post-author::before {
     content: url("../images/postauthoricon.png");
     margin-right: 6px;
@@ -295,15 +299,11 @@ a, a:visited {
     line-height: 0;
     bottom: auto; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003211}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000385}}
 .node__content .field--name-body {
   line-height: 175%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003215}}
-tr.even, tr.odd {
-  background-color: transparent; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003219}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000389}}
 .l-footer {
   border-top: 1px dotted #82BEDE;
   padding: 0;
@@ -314,7 +314,7 @@ tr.even, tr.odd {
   font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
   line-height: 175%;
   text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003230}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003100}}
   .l-footer p {
     margin: 0;
     padding: 0; }

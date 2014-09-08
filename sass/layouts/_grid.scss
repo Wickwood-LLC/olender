@@ -1,0 +1,44 @@
+.l-page {
+    margin: 0 auto;
+
+    @include breakpoint($sm-phone, true){
+        max-width: $sm-phone;
+    }
+    @include breakpoint($phone, true){
+        max-width: 80%;
+    }
+    @include breakpoint($tab-mini, true){
+        max-width: $tab-mini;
+    }
+    @include breakpoint($tab-portrait, true){
+        max-width: $tab-portrait;
+    }
+    @include breakpoint($tab-landscape, true){
+        max-width: $tab-landscape;
+    }
+    @include breakpoint($desk, true){
+        max-width: $desk;
+    }
+}
+
+.l-main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.l-content {
+    flex: 1 100%;
+    padding: 0 2%;
+
+    @include breakpoint($tab-portrait, true){
+        flex: 9 0px;
+    }
+}
+
+.l-region--sidebar-first {
+    flex: 1 100%;
+
+    @include breakpoint($tab-portrait, true){
+        flex: 3 0px;
+    }
+}
