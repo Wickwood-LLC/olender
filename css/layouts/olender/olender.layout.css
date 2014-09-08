@@ -1,49 +1,101 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\000039}}
-.l-page {
-  margin: 0 auto; }
-  @media (min-width: 15em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\000039}}
-    .l-page {
-      max-width: 15em; } }
-  @media (min-width: 20em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\000039}}
-    .l-page {
-      max-width: 20em; } }
-  @media (min-width: 30em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\000039}}
-    .l-page {
-      max-width: 30em; } }
-  @media (min-width: 48em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\000039}}
-    .l-page {
-      max-width: 48em; } }
-  @media (min-width: 64em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\000039}}
-    .l-page {
-      max-width: 64em; } }
-  @media (min-width: 70em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\000039}}
-    .l-page {
-      max-width: 70em; } }
+/*
+Error: Undefined variable: "$sm-phone".
+        on line 6 of E:/wamp/www/olender/sites/all/themes/olender/sass/layouts/olender/olender.layout.scss, in `breakpoint'
+        from line 6 of E:/wamp/www/olender/sites/all/themes/olender/sass/layouts/olender/olender.layout.scss
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\0000332}}
-.l-main {
-  display: flex;
-  flex-flow: row wrap; }
+1: @import "breakpoint";
+2: 
+3: .l-page {
+4:     margin: 0 auto;
+5: 
+6:     @include breakpoint($sm-phone, true){
+7:         max-width: $sm-phone;
+8:     }
+9:     @include breakpoint($phone, true){
+10:         max-width: $phone;
+11:     }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\0000337}}
-.l-content {
-  flex: 1 100%;
-  padding: 0 2%; }
-  @media (min-width: 48em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\0000337}}
-    .l-content {
-      flex: 9 0px; } }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\0000346}}
-.l-region--sidebar-first {
-  flex: 1 100%; }
-  @media (min-width: 48em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/layouts\/olender\/olender\.layout\.scss}line{font-family:\0000346}}
-    .l-region--sidebar-first {
-      flex: 3 0px; } }
+Backtrace:
+E:/wamp/www/olender/sites/all/themes/olender/sass/layouts/olender/olender.layout.scss:6:in `breakpoint'
+E:/wamp/www/olender/sites/all/themes/olender/sass/layouts/olender/olender.layout.scss:6
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:338:in `block (2 levels) in visit_mixin'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:338:in `map'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:330:in `visit_mixin'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `with_base'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:414:in `block (2 levels) in visit_rule'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:414:in `map'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:414:in `block in visit_rule'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:412:in `visit_rule'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `with_base'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:151:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/root_node.rb:20:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/engine.rb:268:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:209:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/sass_compiler.rb:40:in `compile!'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/commands/update_project.rb:49:in `perform'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/commands/base.rb:18:in `execute'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/commands/project_base.rb:19:in `execute'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-compass-1.1.0/lib/guard/compass.rb:140:in `perform'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-compass-1.1.0/lib/guard/compass.rb:123:in `run_on_change'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:74:in `block in run_supervised_task'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:71:in `catch'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:71:in `run_supervised_task'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:119:in `block in _run_first_task_found'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:117:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:117:in `_run_first_task_found'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:53:in `block in run_on_changes'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:150:in `block (3 levels) in _scoped_plugins'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:148:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:148:in `block (2 levels) in _scoped_plugins'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:147:in `catch'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:147:in `block in _scoped_plugins'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:145:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:145:in `_scoped_plugins'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:46:in `run_on_changes'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/setuper.rb:296:in `block (2 levels) in _listener_callback'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/commander.rb:108:in `block in within_preserved_state'
+<internal:prelude>:10:in `synchronize'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/commander.rb:105:in `within_preserved_state'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/setuper.rb:295:in `block in _listener_callback'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:276:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:276:in `_process_changes'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:233:in `block in _wait_for_changes'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:216:in `loop'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:216:in `_wait_for_changes'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:312:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$sm-phone\".\A         on line 6 of E:/wamp/www/olender/sites/all/themes/olender/sass/layouts/olender/olender.layout.scss, in `breakpoint'\A         from line 6 of E:/wamp/www/olender/sites/all/themes/olender/sass/layouts/olender/olender.layout.scss\A \A 1: @import \"breakpoint\";\A 2: \A 3: .l-page {\A 4:     margin: 0 auto;\A 5: \A 6:     @include breakpoint($sm-phone, true){\A 7:         max-width: $sm-phone;\A 8:     }\A 9:     @include breakpoint($phone, true){\A 10:         max-width: $phone;\A 11:     }"; }

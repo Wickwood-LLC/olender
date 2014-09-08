@@ -1,0 +1,7 @@
+li.expanded, li.leaf, li.collapsed,
+ul li, ul li.expanded, ul li.leaf, ul li.collapsed, .item-list ul li, 
+.menu ul li, .menu ul li.expanded, .menu ul li.leaf, .menu ul li.collapsed,
+.menu .collapsed, .menu .expanded, .menu .leaf {
+	text-align: left;
+	list-style: none;
+}

@@ -1,230 +1,124 @@
-@import url(http://fonts.googleapis.com/css?family=Aladin);
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/base\/_media\.scss}line{font-family:\000031}}
-img, media {
-  max-width: 100%; }
+/*
+Error: An @import loop has been found:
+           E:/wamp/www/olender/sites/all/themes/olender/sass/layouts/olender/olender.layout.no-query.scss imports E:\wamp\www\olender\sites\all\themes\olender\sass\olender.styles.scss
+           E:\wamp\www\olender\sites\all\themes\olender\sass\olender.styles.scss imports E:/wamp/www/olender/sites/all/themes/olender/sass/olender.styles.scss
+           E:/wamp/www/olender/sites/all/themes/olender/sass/olender.styles.scss imports E:\wamp\www\olender\sites\all\themes\olender\sass\layouts\olender\olender.layout.no-query.scss
+           E:\wamp\www\olender\sites\all\themes\olender\sass\layouts\olender\olender.layout.no-query.scss imports E:\wamp\www\olender\sites\all\themes\olender\sass\olender.styles.scss
+        on line 5 of E:\wamp\www\olender\sites\all\themes\olender\sass\layouts\olender\olender.layout.no-query.scss
+        from line 1 of E:/wamp/www/olender/sites/all/themes/olender/sass/olender.styles.scss
+        from line 21 of E:\wamp\www\olender\sites\all\themes\olender\sass\olender.styles.scss
+        from line 5 of E:/wamp/www/olender/sites/all/themes/olender/sass/layouts/olender/olender.layout.no-query.scss
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000324}}
-html {
-  font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif; }
+1: $breakpoint-no-queries: true;
+2: $breakpoint-no-query-fallbacks: true;
+3: 
+4: // Re-render everything from styles.scss but without media queries.
+5: @import "olender.styles";
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000330}}
-a, a:visited {
-  color: #3F9ACA;
-  text-decoration: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000334}}
-  a:hover, a:visited:hover {
-    color: #E2341D; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000338}}
-  a.active, a:visited.active {
-    color: #0566C7; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000343}}
-li.expanded, li.leaf, li.collapsed,
-ul li, ul li.expanded, ul li.leaf, ul li.collapsed, .item-list ul li,
-.menu ul li, .menu ul li.expanded, .menu ul li.leaf, .menu ul li.collapsed,
-.menu .collapsed, .menu .expanded, .menu .leaf {
-  text-align: left;
-  list-style: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/RailsInstaller\/Ruby1\.9\.3\/lib\/ruby\/gems\/1\.9\.1\/gems\/toolkit-2\.6\.0\/stylesheets\/toolkit\/_clearfix\.scss}line{font-family:\0000313}}
-.l-branding:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000355}}
-.site-name {
-  font-family: Aladin, Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
-  font-weight: normal;
-  font-size: 2em;
-  font-style: normal;
-  text-align: center;
-  text-shadow: 1.4px 1.4px 5px #4f4f4f;
-  padding: 0;
-  margin: 0;
-  width: 74.57627%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none;
-  font-size: 3em;
-  font-size: 3.2em;
-  margin: 0;
-  font-size: 4.2em;
-  margin: 0;
-  font-size: 5em;
-  margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000365}}
-  .site-name a {
-    text-decoration: none;
-    color: #E2341D; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\0000394}}
-.site-slogan {
-  float: none;
-  font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
-  font-size: 0.65em;
-  font-weight: normal;
-  text-decoration: none;
-  text-align: left;
-  margin: 0 auto;
-  color: #022B55;
-  width: 49.15254%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
-  clear: none;
-  margin-top: 4%;
-  text-align: right;
-  width: 66.10169%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none;
-  font-size: 1em;
-  margin-top: 0;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  margin: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003130}}
-.site-logo {
-  display: block;
-  width: 49.15254%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 0;
-  clear: none;
-  width: 23.72881%;
-  float: left;
-  margin-right: -100%;
-  margin-left: 67.79661%;
-  clear: none;
-  float: right;
-  font-size: 3.5em;
-  font-size: 3.5em;
-  margin: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003155}}
-.l-region--sidebar-first .contextual-links-region {
-  background: #E7F2F9;
-  border: 1px solid #82BEDE;
-  padding: 7px;
-  margin: 3px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003161}}
-  .l-region--sidebar-first .contextual-links-region table {
-    width: 100%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003171}}
-.block__title, .article-title {
-  color: #000000;
-  font-size: 24px;
-  font-family: 'Trebuchet MS', Arial, Helvetica, Sans-Serif;
-  font-weight: normal;
-  font-style: normal;
-  padding: 6px 5px;
-  margin: 0 5px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003181}}
-.article-title {
-  color: #03407C;
-  font-size: 29px;
-  margin: 5px 10px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003188}}
-.tabs--primary {
-  border: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003191}}
-  .tabs--primary li a {
-    text-decoration: none;
-    font-size: 16px;
-    font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
-    font-weight: bold;
-    font-style: normal;
-    text-shadow: 0 -1px 0 rgba(23, 23, 23, 0.82);
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    white-space: nowrap;
-    text-align: center;
-    color: #FFFFFF;
-    margin: 0 !important;
-    overflow: visible;
-    cursor: pointer;
-    text-indent: 0;
-    line-height: 28px;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-    background: #3D9CFA;
-    border: 0;
-    border-collapse: separate;
-    -webkit-background-origin: border !important;
-    -moz-background-origin: border !important;
-    background-origin: border-box !important;
-    background: #3D9CFA;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    padding: 0 21px;
-    margin: 0 auto;
-    height: 28px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003227}}
-    .tabs--primary li a:hover {
-      color: #C7E2F0;
-      background-color: #328DBD; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003232}}
-    .tabs--primary li a.active {
-      color: #C2FFFF;
-      background-color: #25698D; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003239}}
-.node__submitted {
-  color: #0454A4; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003242}}
-  .node__submitted .post-date::before {
-    content: url("../images/postdateicon.png");
-    margin-right: 6px;
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 0;
-    line-height: 0;
-    bottom: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003253}}
-  .node__submitted .post-author::before {
-    content: url("../images/postauthoricon.png");
-    margin-right: 6px;
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 0;
-    line-height: 0;
-    bottom: auto; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003265}}
-.node__content .field--name-body {
-  line-height: 175%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003269}}
-tr.even, tr.odd {
-  background-color: transparent; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003273}}
-.l-footer {
-  border-top: 1px dotted #82BEDE;
-  padding: 0;
-  margin: 20px auto 0;
-  position: relative;
-  color: #000000;
-  font-size: 12px;
-  font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
-  line-height: 175%;
-  text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/drupal-test\/sites\/all\/themes\/olender\/sass\/olender\.styles\.scss}line{font-family:\00003284}}
-  .l-footer p {
-    margin: 0;
-    padding: 0; }
+Backtrace:
+E:\wamp\www\olender\sites\all\themes\olender\sass\layouts\olender\olender.layout.no-query.scss:5
+E:/wamp/www/olender/sites/all/themes/olender/sass/olender.styles.scss:1
+E:\wamp\www\olender\sites\all\themes\olender\sass\olender.styles.scss:21
+E:/wamp/www/olender/sites/all/themes/olender/sass/layouts/olender/olender.layout.no-query.scss:5
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:539:in `handle_import_loop!'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:302:in `visit_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `with_base'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:309:in `block (2 levels) in visit_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:309:in `map'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:309:in `block in visit_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:88:in `block in with_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:88:in `with_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:306:in `visit_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `with_base'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:309:in `block (2 levels) in visit_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:309:in `map'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:309:in `block in visit_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:88:in `block in with_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:88:in `with_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:306:in `visit_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `with_base'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:309:in `block (2 levels) in visit_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:309:in `map'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:309:in `block in visit_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:88:in `block in with_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:88:in `with_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:306:in `visit_import'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:115:in `with_frame'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/stack.rb:79:in `with_base'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:151:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/tree/root_node.rb:20:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/engine.rb:268:in `render'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:209:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.2/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/sass_compiler.rb:40:in `compile!'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/commands/update_project.rb:49:in `perform'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/commands/base.rb:18:in `execute'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-1.0.1/lib/compass/commands/project_base.rb:19:in `execute'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-compass-1.1.0/lib/guard/compass.rb:140:in `perform'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-compass-1.1.0/lib/guard/compass.rb:123:in `run_on_change'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:74:in `block in run_supervised_task'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:71:in `catch'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:71:in `run_supervised_task'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:119:in `block in _run_first_task_found'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:117:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:117:in `_run_first_task_found'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:53:in `block in run_on_changes'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:150:in `block (3 levels) in _scoped_plugins'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:148:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:148:in `block (2 levels) in _scoped_plugins'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:147:in `catch'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:147:in `block in _scoped_plugins'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:145:in `each'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:145:in `_scoped_plugins'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/runner.rb:46:in `run_on_changes'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/setuper.rb:296:in `block (2 levels) in _listener_callback'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/commander.rb:108:in `block in within_preserved_state'
+<internal:prelude>:10:in `synchronize'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/commander.rb:105:in `within_preserved_state'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/guard-2.6.1/lib/guard/setuper.rb:295:in `block in _listener_callback'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:276:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:276:in `_process_changes'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:233:in `block in _wait_for_changes'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:216:in `loop'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:216:in `_wait_for_changes'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:312:in `block in _start_wait_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: An @import loop has been found:\A            E:/wamp/www/olender/sites/all/themes/olender/sass/layouts/olender/olender.layout.no-query.scss imports E:\wamp\www\olender\sites\all\themes\olender\sass\olender.styles.scss\A            E:\wamp\www\olender\sites\all\themes\olender\sass\olender.styles.scss imports E:/wamp/www/olender/sites/all/themes/olender/sass/olender.styles.scss\A            E:/wamp/www/olender/sites/all/themes/olender/sass/olender.styles.scss imports E:\wamp\www\olender\sites\all\themes\olender\sass\layouts\olender\olender.layout.no-query.scss\A            E:\wamp\www\olender\sites\all\themes\olender\sass\layouts\olender\olender.layout.no-query.scss imports E:\wamp\www\olender\sites\all\themes\olender\sass\olender.styles.scss\A         on line 5 of E:\wamp\www\olender\sites\all\themes\olender\sass\layouts\olender\olender.layout.no-query.scss\A         from line 1 of E:/wamp/www/olender/sites/all/themes/olender/sass/olender.styles.scss\A         from line 21 of E:\wamp\www\olender\sites\all\themes\olender\sass\olender.styles.scss\A         from line 5 of E:/wamp/www/olender/sites/all/themes/olender/sass/layouts/olender/olender.layout.no-query.scss\A \A 1: $breakpoint-no-queries: true;\A 2: $breakpoint-no-query-fallbacks: true;\A 3: \A 4: // Re-render everything from styles.scss but without media queries.\A 5: @import \"olender.styles\";"; }
