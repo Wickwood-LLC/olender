@@ -242,16 +242,17 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/components\/_navigation\.scss}line{font-family:\0000349}}
 #block-system-main-menu .menu {
   display: none;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
+  font-size: 1em;
   background: #E7F2F9;
   border: 1px solid #82BEDE;
   margin: 0;
   padding: 1em 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/components\/_navigation\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/components\/_navigation\.scss}line{font-family:\0000368}}
   #block-system-main-menu .menu li {
     flex: 1 100%;
     font-size: 1.250em;
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
     margin-left: 6%;
     text-decoration: none;
@@ -259,20 +260,20 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
     text-align: left; }
 
 /***** Primary tabs menu button *****/
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/components\/_navigation\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/components\/_navigation\.scss}line{font-family:\0000388}}
 .l-content > #menu-button {
   font-size: 0.75em;
   width: 80%; }
 
 /***** Primary tabs *****/
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/components\/_navigation\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/components\/_navigation\.scss}line{font-family:\0000395}}
 .tabs--primary {
   border: 0;
   display: none;
   background: #E7F2F9;
   border: 1px solid #82BEDE;
   width: 89.5%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/components\/_navigation\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/components\/_navigation\.scss}line{font-family:\00003110}}
   .tabs--primary li {
     margin-right: 0;
     width: 100%; }

@@ -48,7 +48,8 @@
 /***** Main navigation *****/
 #block-system-main-menu .menu {
 	display: none;
-	font-family: 'Open Sans', Helvetica, sans-serif;
+	font-family: $default-font;
+	font-size: 1em;
 	background: #E7F2F9;
 	border: 1px solid #82BEDE;
 	margin: 0;
@@ -67,7 +68,7 @@
 	li {
 		flex: 1 100%;
 		font-size: 1.250em;
-		font-weight: bold;
+		font-weight: normal;
 		font-style: normal;
 		margin-left: 6%;
 		text-decoration: none;
@@ -76,6 +77,7 @@
 
 		@include breakpoint($tab-portrait){
 			flex: 0 auto;
+			font-weight: bold;
 			text-align: center;
 			margin: 0 3%;
 		}
