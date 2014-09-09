@@ -1,0 +1,31 @@
+.article-title {
+	@extend .block__title;
+	color: #03407C;
+	font-size: 1.813em;
+	margin: 5px 10px;
+}
+
+.node__submitted {
+	color: #0454A4;
+	margin-top: 1%;
+
+	.post-date::before {
+		content: url('../images/postdateicon.png');
+		margin-right: 6px;
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 0;
+		line-height: 0;
+		bottom: auto;
+	}
+
+	.post-author::before {
+		@extend .post-date::before;
+		content: url('../images/postauthoricon.png');
+	}
+}
+
+.node__content .field--name-body {
+	line-height: $default-line-height;
+}

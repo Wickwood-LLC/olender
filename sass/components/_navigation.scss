@@ -75,8 +75,9 @@
 		text-align: left;
 
 		@include breakpoint($tab-portrait){
-			flex: 0 1 25%;
+			flex: 0 auto;
 			text-align: center;
+			margin: 0 3%;
 		}
 	}
 }
@@ -94,7 +95,7 @@
 	display: none;
 	background: #E7F2F9;
 	border: 1px solid #82BEDE;
-	width: 90%;
+	width: 89.5%;
 
 	@include breakpoint($tab-portrait){
 		@include flexbox();

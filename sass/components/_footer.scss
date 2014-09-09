@@ -1,0 +1,15 @@
+.l-footer {
+	border-top: 1px dotted #82BEDE;
+	padding: 0;
+	margin: 20px auto 0;
+	color: #000000;
+	font-size: $default-font-size * 0.75;
+	font-family: $default-font;
+	line-height: $default-line-height;
+	text-align: center;
+
+	p {
+		margin: 0;
+		padding: 0;
+	}
+}

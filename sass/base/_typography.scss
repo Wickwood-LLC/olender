@@ -24,6 +24,24 @@ a, a:visited {
   }
 }
 
+// Page titles
+.page-title{
+  color: $page-title-color;
+  font-family: $title-font;
+  font-size: $page-title-size;
+  font-weight: normal;
+  font-style: normal;
+  margin: 10px 0 0;
+}
+
+// Block titles
+.block__title {
+  @extend .page-title;
+  color: #000000;
+  padding: 6px 5px;
+  margin: 0 5px;
+}
+
 // Footer fonts
 .l-footer {
   font-size: $footer-font-size;
