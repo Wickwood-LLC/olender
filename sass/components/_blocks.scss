@@ -1,13 +1,11 @@
-.l-region--sidebar-first{
-	.contextual-links-region {
+.l-region--sidebar-first .block {
 	background: #E7F2F9;
 	border: 1px solid #82BEDE;
 	padding: 7px;
 	margin: 3px;
 
-		table {
-			width: 100%;
-		}
+	table {
+		width: 100%;
 	}
 
 	@include breakpoint($tab-portrait){

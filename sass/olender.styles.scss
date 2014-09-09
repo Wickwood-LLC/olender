@@ -20,3 +20,40 @@
 @import "base/**/*";
 @import "components/**/*";
 @import "layouts/**/*";
+
+/********** SASS File Structure **********
+sass/
+|
+|- abstractions/
+|	|– _mixins.scss		 # Sass Mixins
+| 
+|– base/ 
+|   |– _forms.scss       # Form styles
+|	|- _list.scss		 # List styles
+|	|- _media.scss		 # Media rules
+|	|- _tables.scss		 # Table rules
+|   |– _typography.scss  # Typography rules 
+|	|- _user.scss		 # Styles for user pages
+| 
+|– components/ 
+|   |– _blocks.scss 	 # Blocks 
+|	|- _buttons.scss	 # Buttons
+|   |– _footer.scss      # Footer 
+|   |– _main.scss        # Main content area 
+|   |– _navigation.scss  # Navigation 
+|	|- _search.scss		 # Search
+|	|- _sidebar.scss	 # Sidebar
+| 
+|– layouts/ 
+|   |– _grid.scss        # Grid system 
+|   |– _header.scss      # Header 
+| 
+|- variables/
+|	|- _colors.scss		 # Color schemes
+|	|- _grids.scss		 # Grid settings and breakpoints
+|	|- _legacy.scss		 # Legacy browser support
+|	|- _typography		 # Font stacks, sizes, and related metrics
+| 
+`– olender.styles.scss	 # Primary Sass file 
+
+***********************************************/

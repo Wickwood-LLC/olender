@@ -132,3 +132,47 @@
   -webkit-order: $val;  
   order: $val;
 }
+
+/********** Button Styles **********/
+@mixin button(){
+  border: 0;
+  border-collapse: separate;
+  background-origin: border-box !important;
+  background: #3D9CFA;
+  border-radius: 4px;
+  padding: 0 21px;
+  margin: 0 auto;
+  height: 28px;
+}
+
+@mixin button-font-style(){
+  text-decoration: none;
+  font-size: 1em;
+  font-family: $default-font;
+  font-weight: bold;
+  font-style: normal;
+  text-shadow: 0 -1px 0 rgba(23, 23, 23, 0.82);
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0 !important;
+  overflow: visible;
+  cursor: pointer;
+  text-indent: 0;
+  line-height: 28px;
+  box-sizing: content-box;
+  background: #3D9CFA;
+
+  &:hover {
+    color: #C7E2F0;
+    background-color: #328DBD;
+  }
+
+  &.active {
+    color: #C2FFFF;
+    background-color: #25698D;
+  }
+}

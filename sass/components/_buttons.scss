@@ -1,0 +1,27 @@
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	@include button();
+	@include button-font-style();
+}
+
+.tabs--primary li a {
+	@include button-font-style();
+	background: none;
+	color: #3F9ACA;
+	font-size: $default-font-size * 0.75;
+	font-weight: normal;
+	padding: 0;
+	text-align: left;
+	text-indent: 10px;
+	text-shadow: 0 0 0;
+	width: 100%;
+
+	&.active {
+		color: white;
+	}
+
+	@include breakpoint($tab-portrait){
+		@include button();
+		@include button-font-style();
+		width: auto;
+	}
+}

@@ -1,0 +1,8 @@
+.l-region--sidebar-first {
+	flex: 1 100%;
+
+	@include breakpoint($tab-portrait){
+		border-left: 1px dotted #82BEDE;
+		flex: 3 0px;
+	}
+}
