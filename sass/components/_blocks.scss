@@ -1,14 +1,17 @@
 .l-region--sidebar-first .block {
-	background: #E7F2F9;
-	border: 1px solid #82BEDE;
+	background: $block-bg-color;
+	border: 1px solid $border-color;
 	padding: 7px;
 	margin: 3px;
 
 	table {
 		width: 100%;
 	}
+	ul {
+		padding: 0 10px;
+	}
 
 	@include breakpoint($tab-portrait){
-		border-left: 1px dotted #82BEDE;
+		border-left: 1px dotted $border-color;
 	}
 }

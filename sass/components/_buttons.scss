@@ -6,7 +6,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 .tabs--primary li a {
 	@include button-font-style();
 	background: none;
-	color: #3F9ACA;
+	color: $link-color;
 	font-size: $default-font-size * 0.75;
 	font-weight: normal;
 	padding: 0;

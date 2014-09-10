@@ -3,13 +3,12 @@
 }
 
 .l-branding {
+    display: flex;
 	flex-flow: row wrap;
-
-	@include flexbox();
 
 	@include breakpoint($tab-mini){
 		flex-flow: column wrap;
-		height: 135px;
+		height: 150px;
 	}
 	@include breakpoint($tab-portrait){
 		max-height: 120px;	
@@ -18,9 +17,9 @@
 
 .site-name {
 	font-family: $site-name-font;
-  	@include site-name-styles;
+    flex: 1 auto;
 
-	@include flex(1 auto);
+    @include site-name-styles;
 	@include breakpoint($sm-phone, true){
         width: 100%; 
     }
@@ -44,16 +43,16 @@
 }
 
 .site-slogan {
+    flex: 1 auto;
 	float: none;
 	font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
 	font-size: $default-font-size * 0.75;
-	font-weight: normal;
+	font-weight: bold;
 	text-decoration: none;
 	text-align: center;
 	margin: 0 auto;
 	color: $site-slogan-color;
 
-	@include flex(1 auto);
 	@include breakpoint($sm-phone, true){
 		margin-top: 0;
         text-align: center;
@@ -85,28 +84,22 @@
 .site-logo {
 	display: block;
 	align-self: center;
+    flex: 0 auto;
     flex-flow: row wrap;
-    justify-content: space-around;
     margin: 0;
-    width: auto;
-    max-width: 100%;
-
-	@include flex(2 auto);
+    width: 100%;
 
     img {
-    	@include flex(0 auto);
     	width: 100%;
     }
-
-	@include flex(1 auto);
 
 	@include breakpoint($sm-phone, true){
 
     }
     @include breakpoint($tab-mini, true){
-        
+        max-width: 50%;
     }
     @include breakpoint($tab-portrait, true){
-        max-width: 30%;
+        width: auto;
     }
 }

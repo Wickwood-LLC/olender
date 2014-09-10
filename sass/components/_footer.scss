@@ -3,10 +3,14 @@
 	padding: 0;
 	margin: 20px auto 0;
 	color: #000000;
-	font-size: $default-font-size * 0.75;
+	font-size: $default-font-size * 0.625;
 	font-family: $default-font;
 	line-height: $default-line-height;
 	text-align: center;
+	
+	@include breakpoint($tab-mini){
+		font-size: $default-font-size * 0.75;
+	}
 
 	p {
 		margin: 0;

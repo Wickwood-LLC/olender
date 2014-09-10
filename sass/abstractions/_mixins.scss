@@ -96,10 +96,13 @@
 @mixin site-name-styles{
   font-weight: normal;
   font-style: normal;
+  justify-content: center;
   text-align: center;
   text-shadow: 1.4px 1.4px 5px rgb(79, 79, 79);
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: flex-end;
   
   a {
     text-decoration: none;
@@ -107,38 +110,12 @@
   }
 }
 
-
-/********** Flexbox Mixins **********/
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-
-@mixin flex($values) {
-  -webkit-box-flex: $values;
-  -moz-box-flex:  $values;
-  -webkit-flex:  $values;
-  -ms-flex:  $values;
-  flex:  $values;
-}
-
-@mixin order($val) {
-  -webkit-box-ordinal-group: $val;  
-  -moz-box-ordinal-group: $val;     
-  -ms-flex-order: $val;     
-  -webkit-order: $val;  
-  order: $val;
-}
-
 /********** Button Styles **********/
 @mixin button(){
   border: 0;
   border-collapse: separate;
   background-origin: border-box !important;
-  background: #3D9CFA;
+  background: $button-bg-color;
   border-radius: 4px;
   padding: 0 21px;
   margin: 0 auto;
@@ -167,12 +144,12 @@
   background: #3D9CFA;
 
   &:hover {
-    color: #C7E2F0;
-    background-color: #328DBD;
+    color: $button-text-hover-color;
+    background-color: $button-hover-color;
   }
 
   &.active {
-    color: #C2FFFF;
-    background-color: #25698D;
+    color: $button-text-active-color;
+    background-color: $button-active-color;
   }
 }
