@@ -469,6 +469,7 @@ button.active, html input[type="button"].active, input[type="reset"].active, inp
     -ms-flex: 0 auto;
     flex: 0 auto;
     margin: 0 1% 1% 0;
+    margin: 0 5px 5px 0;
     width: auto;
   }
 }
