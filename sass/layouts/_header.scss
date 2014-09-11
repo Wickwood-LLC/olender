@@ -50,7 +50,6 @@
 	font-weight: bold;
 	text-decoration: none;
 	text-align: center;
-	margin: 0 auto;
 	color: $site-slogan-color;
 
 	@include breakpoint($sm-phone, true){

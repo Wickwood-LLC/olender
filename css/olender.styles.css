@@ -689,7 +689,6 @@ button.active, html input[type="button"].active, input[type="reset"].active, inp
   font-weight: bold;
   text-decoration: none;
   text-align: center;
-  margin: 0 auto;
   color: #022B55;
 }
 @media (min-width: 15em) {
@@ -725,7 +724,7 @@ button.active, html input[type="button"].active, input[type="reset"].active, inp
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000383}}
 .site-logo {
   display: block;
   -webkit-align-self: center;
@@ -741,24 +740,24 @@ button.active, html input[type="button"].active, input[type="reset"].active, inp
   margin: 0;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000391}}
 .site-logo img {
   width: 100%;
 }
 @media (min-width: 30em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000383}}
   .site-logo {
     max-width: 50%;
   }
 }
 @media (min-width: 48em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000383}}
   .site-logo {
     width: 30%;
   }
 }
 @media (min-width: 64em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000383}}
   .site-logo {
     width: auto;
   }
@@ -800,5 +799,3 @@ sass/
 `ΓÇô olender.styles.scss	 # Primary Sass file 
 
 ***********************************************/
-
-/*# sourceMappingURL=olender.styles.css.map */
