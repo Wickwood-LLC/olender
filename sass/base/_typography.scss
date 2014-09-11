@@ -26,20 +26,23 @@ a, a:visited {
 
 // Page titles
 .page-title{
-  color: $page-title-color;
-  font-family: $title-font;
-  font-size: $page-title-size;
-  font-weight: normal;
-  font-style: normal;
-  margin: 10px 0 0;
+  @include title-styles;
+  text-align: center;
+  font-weight: bold;
 }
 
 // Block titles
 .block__title {
-  @extend .page-title;
+  @include title-styles;
   color: #000000;
   padding: 6px 5px;
   margin: 0 5px;
+}
+
+// Node titles
+.node__title {
+  @include title-styles;
+  font-weight: normal;
 }
 
 // Footer fonts

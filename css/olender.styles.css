@@ -2,6 +2,7 @@
 /********** Include webfonts **********/
 /********** Site name styles **********/
 /********** Button Styles **********/
+/********** Title Styles **********/
 @import url(http://fonts.googleapis.com/css?family=Aladin);
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_forms\.scss}line{font-family:\000031}}
 input[name="name"], input[name="pass"] {
@@ -59,28 +60,47 @@ a.active, a:visited.active {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_typography\.scss}line{font-family:\0000328}}
-.page-title, .block__title, .article-title {
+.page-title {
   color: #067FF9;
   font-family: "Trebuchet MS", Arial, Helvetica, Sans-Serif;
   font-size: 26px;
   font-weight: normal;
   font-style: normal;
-  margin: 10px 0 0;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_typography\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_typography\.scss}line{font-family:\0000335}}
 .block__title, .article-title {
+  color: #067FF9;
+  font-family: "Trebuchet MS", Arial, Helvetica, Sans-Serif;
+  font-size: 26px;
+  font-weight: normal;
+  font-style: normal;
+  margin: 10px 0;
   color: #000000;
   padding: 6px 5px;
   margin: 0 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_typography\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_typography\.scss}line{font-family:\0000343}}
+.node__title {
+  color: #067FF9;
+  font-family: "Trebuchet MS", Arial, Helvetica, Sans-Serif;
+  font-size: 26px;
+  font-weight: normal;
+  font-style: normal;
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_typography\.scss}line{font-family:\0000349}}
 .l-footer {
   font-size: 12px;
 }
 @media (min-width: 20em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_typography\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/base\/_typography\.scss}line{font-family:\0000349}}
   .l-footer {
     font-size: 9px;
   }

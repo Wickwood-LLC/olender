@@ -153,3 +153,13 @@
     background-color: $button-active-color;
   }
 }
+
+/********** Title Styles **********/
+@mixin title-styles(){
+  color: $page-title-color;
+  font-family: $title-font;
+  font-size: $page-title-size;
+  font-weight: normal;
+  font-style: normal;
+  margin: 10px 0;
+}
