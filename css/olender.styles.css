@@ -468,7 +468,6 @@ button.active, html input[type="button"].active, input[type="reset"].active, inp
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
     flex: 0 auto;
-    margin: 0 1% 1% 0;
     margin: 0 5px 5px 0;
     width: auto;
   }
@@ -755,6 +754,12 @@ button.active, html input[type="button"].active, input[type="reset"].active, inp
   }
 }
 @media (min-width: 48em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000384}}
+  .site-logo {
+    width: 30%;
+  }
+}
+@media (min-width: 64em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wamp\/www\/olender\/sites\/all\/themes\/olender\/sass\/layouts\/_header\.scss}line{font-family:\0000384}}
   .site-logo {
     width: auto;
