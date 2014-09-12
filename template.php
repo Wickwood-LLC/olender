@@ -15,7 +15,7 @@ function olender_preprocess_node(&$variables) {
   }
 }
 
-function theme_breadcrumb($variables) {
+function olender_breadcrumb($variables) {
   $breadcrumb = $variables['breadcrumb'];
 
   if (!empty($breadcrumb)) {
