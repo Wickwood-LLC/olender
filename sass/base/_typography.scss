@@ -10,6 +10,15 @@ html {
   }
 }
 
+// Breadcrumbs
+.breadcrumb {
+  font-size: $default-font-size * 0.625;
+
+  @include breakpoint($tab-mini){
+    font-size: $default-font-size * 0.75;
+  }
+}
+
 // Link colors
 a, a:visited {
   color: $link-color;
